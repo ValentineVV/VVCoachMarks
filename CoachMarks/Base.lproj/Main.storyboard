@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IEB-Gq-Jst">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Dkk-Rr-CIL">
+            <objects>
+                <viewController id="IEB-Gq-Jst" customClass="ViewController" customModule="CoachMarks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1rZ-2c-dFY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDT-UE-c9z">
+                                <rect key="frame" x="16" y="499" width="128" height="30"/>
+                                <state key="normal" title="Yellow coach mark"/>
+                                <connections>
+                                    <action selector="didTapYellowButton:" destination="IEB-Gq-Jst" eventType="touchUpInside" id="2dn-A8-Aaf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnQ-t5-wfc">
+                                <rect key="frame" x="177" y="499" width="127" height="30"/>
+                                <state key="normal" title="Custom body view"/>
+                                <connections>
+                                    <action selector="didTapCustomBodyButton:" destination="IEB-Gq-Jst" eventType="touchUpInside" id="5b9-D5-wRT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDh-NV-2eb">
+                                <rect key="frame" x="186" y="40" width="118" height="30"/>
+                                <state key="normal" title="Rounded corners"/>
+                                <connections>
+                                    <action selector="didTapRoundedCornersButton:" destination="IEB-Gq-Jst" eventType="touchUpInside" id="z4J-gq-bQH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eY-Wc-cNn">
+                                <rect key="frame" x="16" y="40" width="131" height="30"/>
+                                <state key="normal" title="Custom arrow view"/>
+                                <connections>
+                                    <action selector="didTapCustomArrowButton:" destination="IEB-Gq-Jst" eventType="touchUpInside" id="7yC-5I-eOV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1o-yQ-tXQ">
+                                <rect key="frame" x="104" y="230" width="113" height="109"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Default"/>
+                                <connections>
+                                    <action selector="didTapButton:" destination="IEB-Gq-Jst" eventType="touchUpInside" id="Dp6-5h-nnT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.87070410955405364" blue="0.71492448716066159" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Eji-bs-7lC" firstAttribute="trailing" secondItem="E1o-yQ-tXQ" secondAttribute="trailing" constant="103" id="65M-T9-LVY"/>
+                            <constraint firstItem="E1o-yQ-tXQ" firstAttribute="top" secondItem="Eji-bs-7lC" secondAttribute="top" constant="230" id="6PB-RW-9al"/>
+                            <constraint firstItem="UnQ-t5-wfc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hDT-UE-c9z" secondAttribute="trailing" id="76V-q2-yNw"/>
+                            <constraint firstItem="5eY-Wc-cNn" firstAttribute="top" secondItem="Eji-bs-7lC" secondAttribute="top" constant="40" id="9H1-2Q-Sjv"/>
+                            <constraint firstItem="5eY-Wc-cNn" firstAttribute="leading" secondItem="Eji-bs-7lC" secondAttribute="leading" constant="16" id="Fhj-e1-aAd"/>
+                            <constraint firstItem="hDT-UE-c9z" firstAttribute="leading" secondItem="Eji-bs-7lC" secondAttribute="leading" constant="16" id="MxC-Bm-aAi"/>
+                            <constraint firstItem="Eji-bs-7lC" firstAttribute="trailing" secondItem="JDh-NV-2eb" secondAttribute="trailing" constant="16" id="Odz-kK-AEe"/>
+                            <constraint firstItem="Eji-bs-7lC" firstAttribute="bottom" secondItem="E1o-yQ-tXQ" secondAttribute="bottom" constant="229" id="RNs-LG-Fyu"/>
+                            <constraint firstItem="E1o-yQ-tXQ" firstAttribute="leading" secondItem="Eji-bs-7lC" secondAttribute="leading" constant="104" id="RSe-cf-VZm"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="hDT-UE-c9z" secondAttribute="bottom" constant="39" id="dF8-OU-pcB"/>
+                            <constraint firstItem="JDh-NV-2eb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5eY-Wc-cNn" secondAttribute="trailing" id="q4E-g2-rtM"/>
+                            <constraint firstItem="JDh-NV-2eb" firstAttribute="top" secondItem="Eji-bs-7lC" secondAttribute="top" constant="40" id="uXf-M2-bnV"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="UnQ-t5-wfc" secondAttribute="bottom" constant="39" id="wDK-Qd-GLG"/>
+                            <constraint firstItem="Eji-bs-7lC" firstAttribute="trailing" secondItem="UnQ-t5-wfc" secondAttribute="trailing" constant="16" id="xI3-l6-uC4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Eji-bs-7lC"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="E1o-yQ-tXQ" id="kEY-Qt-csu"/>
+                        <outlet property="customArrowButton" destination="5eY-Wc-cNn" id="Uj8-LG-RZz"/>
+                        <outlet property="customBodyButton" destination="UnQ-t5-wfc" id="o8a-R9-aqC"/>
+                        <outlet property="roundedCornersButton" destination="JDh-NV-2eb" id="bYg-Ye-e8g"/>
+                        <outlet property="yellowButton" destination="hDT-UE-c9z" id="Mdy-6i-UgV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8gF-sX-Afz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="115.14084507042254"/>
+        </scene>
+    </scenes>
+</document>
