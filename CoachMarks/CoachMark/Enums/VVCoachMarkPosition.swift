@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum VVCoachMarkPosition {
+public enum VVCoachMarkPosition {
     case topLeft
     case topCenter
     case topRight
@@ -17,7 +17,7 @@ enum VVCoachMarkPosition {
     case bottomLeft
 }
 
-enum VVCoachMarkArrowPosition {
+public enum VVCoachMarkArrowPosition {
     case topLeft
     case topCenter
     case topRight
