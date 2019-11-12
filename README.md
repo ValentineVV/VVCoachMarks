@@ -15,7 +15,7 @@ Add customizable coach marks into your iOS project. Available for both iPhone an
   * [License](#license)
 
 ## Overview
-![VVCoachMarks Demo](CoachMarks/demo.gif)
+![VVCoachMarks Demo](https://github.com/ValentineVV/VVCoachMarks/blob/master/demo.gif)
 
 ## Requirements
 - Xcode 11 / Swift 5+
