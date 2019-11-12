@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.homepage = "https://github.com/ValentineVV/VVCoachMarks"
   spec.source = { :git => "https://github.com/ValentineVV/VVCoachMarks.git", :tag => "#{spec.version}" }
   
-  spec.source_files  = "CoachMarks/**/*.{swift}"
+  spec.source_files  = "CoachMarks/CoachMark/**/*.{swift}"
   spec.swift_version = "5.0"
 
 end
