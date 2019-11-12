@@ -14,7 +14,7 @@ public protocol VVCoachMarkManagerDelegate {
     func viewForCoachMarkArrow() -> UIView?
 }
 
-extension VVCoachMarkManagerDelegate {
+public extension VVCoachMarkManagerDelegate {
     func viewForCoachMarkBody() -> UIView? {
         return nil
     }

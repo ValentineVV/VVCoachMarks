@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-struct Constant {
-    static let arrowHeight: CGFloat = 12
-    static let arrowWidth: CGFloat = 12
-    static let inset: CGFloat = 12
-    static let coachMarkWidth: CGFloat = 190
+public struct Constant {
+    public static let arrowHeight: CGFloat = 12
+    public static let arrowWidth: CGFloat = 12
+    public static let inset: CGFloat = 12
+    public static let coachMarkWidth: CGFloat = 190
 }
 
 public struct VVCoachMarkPreferences {
@@ -31,7 +31,7 @@ public struct VVCoachMarkPreferences {
         }
     }
     
-    init(arrowHeight: CGFloat? = Constant.arrowHeight,
+    public init(arrowHeight: CGFloat? = Constant.arrowHeight,
          arrowWidth: CGFloat? = Constant.arrowWidth,
          cornerRadius: CGFloat? = .zero,
          textColor: UIColor?,
@@ -48,7 +48,7 @@ public struct VVCoachMarkPreferences {
         self.coachMarkWidth = coachMarkWidth ?? Constant.coachMarkWidth
     }
     
-    static let defaultPreferences = {
+    public static let defaultPreferences = {
         return VVCoachMarkPreferences(cornerRadius: 0, textColor: .white, textFont: .systemFont(ofSize: 12), coachMarkColor: .purple)
     }()
 }

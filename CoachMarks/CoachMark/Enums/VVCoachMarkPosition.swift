@@ -25,7 +25,7 @@ public enum VVCoachMarkArrowPosition {
     case bottomCenter
     case bottomLeft
 
-    static func arrowPositionByCoachMarkPosition(_ coachMarkPosition: VVCoachMarkPosition) -> VVCoachMarkArrowPosition {
+    public static func arrowPositionByCoachMarkPosition(_ coachMarkPosition: VVCoachMarkPosition) -> VVCoachMarkArrowPosition {
         switch coachMarkPosition {
             
         case .topLeft:

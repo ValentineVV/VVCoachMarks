@@ -11,7 +11,7 @@ import UIKit
 
 public class VVCoachMarkManager {
     
-    var delegate: VVCoachMarkManagerDelegate?
+    public var delegate: VVCoachMarkManagerDelegate?
     
     private let window = UIApplication.shared.windows.first!
     
@@ -20,13 +20,13 @@ public class VVCoachMarkManager {
     private var coachMarkView: VVCoachMarkView!
     private var coachMark: VVCoachMark!
     private var preferences: VVCoachMarkPreferences!
-    var isGotItButtonHidden = true
+    public var isGotItButtonHidden = true
     
-    static let shared = VVCoachMarkManager()
+    public static let shared = VVCoachMarkManager()
     
     private init() {}
     
-    func showCoachMark(_ coachMark: VVCoachMark, preferences: VVCoachMarkPreferences = VVCoachMarkPreferences.defaultPreferences) {
+    public func showCoachMark(_ coachMark: VVCoachMark, preferences: VVCoachMarkPreferences = VVCoachMarkPreferences.defaultPreferences) {
         if coachMark.message == "" {
             return
         }

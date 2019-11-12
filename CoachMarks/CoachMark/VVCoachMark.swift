@@ -16,7 +16,7 @@ public struct VVCoachMark {
     let arrowPosition: VVCoachMarkArrowPosition
     let message: String
     
-    init(for anchorView: UIView, in view: UIView, coachMarkPosition: VVCoachMarkPosition, message: String) {
+    public init(for anchorView: UIView, in view: UIView, coachMarkPosition: VVCoachMarkPosition, message: String) {
         self.anchorView = anchorView
         self.viewToShow = view
         self.arrowPosition = VVCoachMarkArrowPosition.arrowPositionByCoachMarkPosition(coachMarkPosition)
