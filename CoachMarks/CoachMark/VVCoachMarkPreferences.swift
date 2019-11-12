@@ -16,7 +16,7 @@ struct Constant {
     static let coachMarkWidth: CGFloat = 190
 }
 
-struct VVCoachMarkPreferences {
+public struct VVCoachMarkPreferences {
     var arrowHeight: CGFloat
     var arrowWidth: CGFloat
     var cornerRadius: CGFloat?

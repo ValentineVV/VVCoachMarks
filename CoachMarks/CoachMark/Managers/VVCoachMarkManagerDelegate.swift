@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol VVCoachMarkManagerDelegate {
+public protocol VVCoachMarkManagerDelegate {
     func viewForCoachMarkBody() -> UIView?
     func viewForCoachMarkArrow() -> UIView?
 }

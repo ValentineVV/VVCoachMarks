@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct VVCoachMark {
+public struct VVCoachMark {
     
     let anchorView: UIView
     let viewToShow: UIView

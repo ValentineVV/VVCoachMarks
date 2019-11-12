@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class VVCoachMarkManager {
+public class VVCoachMarkManager {
     
     var delegate: VVCoachMarkManagerDelegate?
     
