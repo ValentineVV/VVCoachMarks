@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
   spec.platform = :ios
   spec.ios.deployment_target = "10.0"
   spec.name = "VVCoachMarks"
-  spec.version = "0.0.2"
+  spec.version = "0.0.3"
   spec.summary = "VVCoachMarks lets users show coach marks in an easy way."
   
   spec.license = { :type => "MIT", :file => "LICENSE" }
